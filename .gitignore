@@ -3,3 +3,9 @@ module-code/.project
 module-code/.settings
 module-code/.springBeans
 module-code/target
+module-code/bin
+module-code/logs
+module-code/project/project
+module-code/project/target
+sample-app/rsplatformSample/bin
+sample-app/rsplatformSample/.*
