@@ -3,6 +3,7 @@ import sbt._
 object Dependencies {
  
     lazy val springVersion = "4.0.3.RELEASE"
+    lazy val togglzVersion = "2.2.0.Final"
     
     val mockito = "org.mockito" % "mockito-core" % "1.+" % "test"
  	val sprintTest = "org.springframework" % "spring-test" % springVersion % "test"
@@ -31,7 +32,10 @@ object Dependencies {
 	    "org.springframework" % "spring-aop" % springVersion,
 	    "cglib" % "cglib" % "2.2.2",
 	    "be.objectify" %% "deadbolt-java" % "2.3.3",
-	    "mysql" % "mysql-connector-java" % "5.1.18"
+	    "mysql" % "mysql-connector-java" % "5.1.18",
+	    "org.togglz" % "togglz-servlet" % togglzVersion,
+	    "org.togglz" % "togglz-spring-core" % togglzVersion,
+	    "org.togglz" % "togglz-console" % togglzVersion
 	)
 
  	val rentsimpleDeps = (compileDeps ++ testDeps)

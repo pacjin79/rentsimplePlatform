@@ -8,9 +8,8 @@ scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
   javaJdbc,
-  javaEbean,
-  cache,
-  javaWs
+  javaJpa.exclude("org.hibernate.javax.persistence", "hibernate-jpa-2.0-api"),
+  cache
 )
 
 lazy val commonSettings = Seq(
